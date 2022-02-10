@@ -1,0 +1,19 @@
+{
+  "name": "gql-file-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "llaudevc",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^3.6.3",
+    "gql": "^1.1.2",
+    "lodash.merge": "^4.6.2"
+  }
+}
