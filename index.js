@@ -1,16 +1,7 @@
-import { ApolloServer, gql } from 'apollo-server';
-import { resolvers, Query } from './schemas';
+import { ApolloServer } from 'apollo-server';
+import { resolvers, typeDefs } from './schemas';
 
-const rootQuery = gql`
-  type Query {
-    _empty: String
-  }
-`;
-
-const server = new ApolloServer({
-  typeDefs: [rootQuery, Query],
-  resolvers,
-});
+const server = new ApolloServer({ typeDefs, resolvers });
 
 (async function startServer() {
   const { url } = await server.listen(8080);
